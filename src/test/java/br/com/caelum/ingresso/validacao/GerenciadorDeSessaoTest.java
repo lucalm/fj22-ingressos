@@ -23,12 +23,12 @@ public class GerenciadorDeSessaoTest {
 	private Sessao sessaoDasDezoito;
 	
 	@Before
-	public void preparaSessoes(){
-	this.rogueOne = new Filme("Rogue One", Duration.ofMinutes(120), "SCI-FI");
-	this.sala3D = new Sala("Sala 3D");
-	this.sessaoDasDez = new Sessao(LocalTime.parse("10:00:00"), rogueOne, sala3D);
-	this.sessaoDasTreze = new Sessao(LocalTime.parse("13:00:00"), rogueOne, sala3D);
-	this.sessaoDasDezoito = new Sessao(LocalTime.parse("18:00:00"), rogueOne, sala3D);
+	public void preparaSessoes() {
+		this.rogueOne = new Filme("Rogue One", Duration.ofMinutes(120), "SCI-FI");
+		this.sala3D = new Sala("Sala 3D");
+		this.sessaoDasDez = new Sessao(LocalTime.parse("10:00:00"), rogueOne, sala3D);
+		this.sessaoDasTreze = new Sessao(LocalTime.parse("13:00:00"), rogueOne, sala3D);
+		this.sessaoDasDezoito = new Sessao(LocalTime.parse("18:00:00"), rogueOne, sala3D);
 	}
 	
 	@Test
